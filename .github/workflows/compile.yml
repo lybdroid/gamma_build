@@ -6,14 +6,7 @@ name: CI
 on:
   schedule:
     - cron: " 0 0 1 * * "
-  
-
-  # Allows you to run this workflow manually from the Actions ta
-
-
   workflow_dispatch:
-
-
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -33,7 +26,6 @@ jobs:
           chmod +x prepare_env.sh
           chmod +x variants_build.sh
           ./prepare_env.sh
-          ./variants_build.sh
           
        # Runs a set of commands using the runners shell
       - name: Compiling Kernel
