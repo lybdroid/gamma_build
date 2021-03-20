@@ -25,7 +25,7 @@ do
     cd ..
     curl -F document=@lge_msm8996_gamma-${variant}_${DATEI}.zip "https://api.telegram.org/bot$BOTTOKEN/sendDocument" \
         -F chat_id="$CHATID" \
-        -F caption="[BOT] Build for ${variant} GAMMA AOSP Eva GCC 11.0.1 20210318"
+        -F caption="[BOT] Build for ${variant} GAMMA AOSP ${GCC_VER}"
 
 done
 
