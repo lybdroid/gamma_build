@@ -30,5 +30,4 @@ jobs:
         env:
           BOTTOKEN: ${{ secrets.BOTTOKEN }}
           CHATID: ${{ secrets.CHATID }}
-        run: |
-          run: ./variants_build.sh
+        run: ./variants_build.sh
