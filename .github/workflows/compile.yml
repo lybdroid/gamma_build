@@ -20,13 +20,6 @@ jobs:
           fetch-depth: 0
           # ref: master
 
-      - name: Cache build cache
-        id: cache-out
-        uses: actions/cache@v2
-        with:
-           path: out
-           key: ${{ runner.os }}-out
-
       - name: Install dependencies
         run: |
           chmod +x prepare_env.sh
