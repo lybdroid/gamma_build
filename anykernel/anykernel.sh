@@ -39,11 +39,6 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 ## AnyKernel install
 dump_boot;
 
-if [ -f "init.rc" ]; then
-  ui_print "Applying kernel parameter changes";
-  insert_line "init.rc" "init.kernel.params.rc" before "import /init.environ.rc" "import /init.msm8996.rc";
-fi
-
 write_boot;
 ## end install
 
